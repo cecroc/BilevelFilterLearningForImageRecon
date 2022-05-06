@@ -5,7 +5,7 @@ from the paper:
 
 Caroline Crockett and Jeffrey A. Fessler (2022), "Bilevel Methods for Image
 Reconstruction", Foundations and Trends® in Signal Processing: Vol. 15: No. 2-3,
-pp 121-289. http://dx.doi.org.proxy.lib.umich.edu/10.1561/2000000111
+pp 121-289. http://dx.doi.org/10.1561/2000000111
 
 The code is not currently set-up as a package, so the easiest way to use it is
 to git clone the repository
