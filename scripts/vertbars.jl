@@ -188,7 +188,8 @@ plot(state.opt["lossj"], lc=:black, border=1,
 xhat = copy(y)
 inds = 1:10:state.niter
 for u in inds
-	state.opt["true_lossj"][u], xhat = evaluate_loss(state.out[u]; x0=xhat)
+	# possibly causing ambiguity and report error on my local machine
+	state.opt["true_lossj"][u], xhat_ambiguos = evaluate_loss(state.out[u]; x0=xhat)
 end
 # plot the true and estimated upper-level loss function
 scatter!(inds, state.opt["true_lossj"][inds], mc=:blue, ms=2)
