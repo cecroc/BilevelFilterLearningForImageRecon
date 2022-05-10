@@ -288,7 +288,7 @@ function gm_Φ(y, γ, 𝚽; niter=1000, x0=y, sb=scratch(x0, γ.h; y),
 	new_pogm_state(;
 	    f_cost = (s::pogm_state) -> s.fcostnew, # set in f_grad! function
 	    f_grad! = (res, x; pogm_state) -> f_grad!(res, x, y, γ, 𝚽, pogm_state, sb),
-		f_L = 𝚽.LC + regLC(γ,reg),
+		f_L = 𝚽.LC + regLC(γ,𝚽.reg),
 	    g_prox! = (res, z, c::Real; pogm_state) -> copy!(res,z), # no prox operator
 	    fun = (s::pogm_state) -> fun(s),
 		x0, niter,
