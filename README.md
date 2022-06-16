@@ -22,11 +22,11 @@ Description of the available scripts:
 - scripts/vertbars.jl: reproduces the demonstrations using the vertical bar
   image (see Appendix D.1)
 
-(the next two scripts are coming soon)
-
 - scripts/cameraman.jl: reproduces the demonstrations using the cameraman image
   (see Appendix D.2). Note the code has the number of iterations set much lower
   than in the paper so that the code runs faster.
+  
+(the next script is coming soon)
 
 - scripts/foundations_and_trends_reproduce: reproduces all of the remaining
   figures in the paper.
